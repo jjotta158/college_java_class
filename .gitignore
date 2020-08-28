@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
 
+#nodejsconfiguration
+*.node_modules/
+
 # Log file
 *.log
 
