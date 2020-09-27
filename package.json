@@ -5,10 +5,14 @@
   "repository": "https://github.com/jjotta158/college_object_orientation_class.git",
   "author": "Jairo Junior <jjotta158@outlook.com>",
   "scripts": {
-      "start":"ts-node-dev --transpile-only index.ts"
+    "start": "ts-node-dev --transpile-only index.ts",
+    "execute_exercise_2": "ts-node-dev --transpile-only test_p1/exercise_2/index.ts"
   },
   "license": "MIT",
   "dependencies": {
+    "@types/node": "^14.11.2",
+    "@types/readline-sync": "^1.4.3",
+    "readline-sync": "^1.4.10",
     "tsc": "^1.20150623.0"
   },
   "devDependencies": {
