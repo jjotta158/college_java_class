@@ -15,11 +15,17 @@ class ControleRemoto {
     public luzes:Luzes;
     public pipoqueira:Pipoqueira;
     public projetor:Projetor;
-    
+
     constructor() {
-
+        this.arCondicionado = new ArCondicionado();
+        this.blueRay = new BlueRay();
+        this.cadeiraReclinavel = new CadeiraReclinavel();
+        this.homeTheater = new HomeTheater();
+        this.luzes = new Luzes();
+        this.pipoqueira = new Pipoqueira();
+        this.projetor = new Projetor();
     }
-
+    
     public ligar():void {
         this.arCondicionado = new ArCondicionado();
         this.blueRay = new BlueRay();
@@ -53,7 +59,7 @@ class ControleRemoto {
     public setTypeToComedy():void {
         this.projetor.setType('Comedy')
     }
-
+2
     public setTypeToAction():void {
         this.projetor.setType('Action');
     }
@@ -71,11 +77,11 @@ class ControleRemoto {
     }
 
     public voumeUp():number{
-        return this.homeTheater.volumeUp
+        return this.homeTheater.volumeUp()
     }
 
     public volumeDown():number {
-        return this.homeTheater.volumeDown
+        return this.homeTheater.volumeDown()
     }
 
     public setTypeToSamba():void {
