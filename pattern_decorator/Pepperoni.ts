@@ -1,10 +1,12 @@
 import Pizza from './Pizza';
 
-export default class Pepperoni extends Pizza{
-    public cost:number;
+export default abstract class Pepperoni extends Pizza{
 
-    constructor(desc:string, cost:number) {
+    constructor() {
         super()
-        this.cost = cost
+    }
+
+    public cost():number {
+        return 11.90
     }
 }

@@ -1,6 +1,6 @@
-export default class Pizza {
+export default abstract class Pizza {
     
-    private description:string;
+    protected description:string;
 
     constructor() {}
 
@@ -11,4 +11,6 @@ export default class Pizza {
     public getDescription():string {
         return this.description;
     }
+
+    public abstract cost():number;
 }
